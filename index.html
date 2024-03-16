@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css" />
+    <script src="script.js" defer></script>
+
+    <title>RPS Mini Games</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="summary">
+            <h1 class="title">MATCH RESULT</h1>
+            <br />
+            <h1 id="inGame"></h1>
+            <h3 id="result"></h3>
+            <!-- Tampilkan elemen untuk menampilkan skor -->
+            <div id="scoreDisplay">Skor: 0 - 0</div>
+            <!-- Tampilkan tombol Mulai -->
+            <button onclick="startGame()">Mulai</button>
+        </div>
+        <div>
+            <label for="playerName">Masukkan Nama Anda: </label>
+            <input type="text" id="playerName" placeholder="Pemain">
+        </div>
+        <div class="games">
+            <div class="option" onclick="pickOption('🖐')">🖐</div>
+            <div class="option" onclick="pickOption('✌')">✌</div>
+            <div class="option" onclick="pickOption('✊')">✊</div>
+        </div>
+    </div>
+</body>
+
+</html>

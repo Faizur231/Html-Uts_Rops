@@ -1,0 +1,75 @@
+:root {
+  box-sizing: border-box;
+}
+
+html,body,* {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  height: 100vh;
+}
+
+.summary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  border: 3px solid blanchedalmond;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+}
+
+.games {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.option {
+  width: 30%;
+  margin: 10px 15px;
+  padding: 25px;
+  text-align: center;
+  font-size: 40px;
+  background-color: bisque;
+}
+
+.option:hover {
+  cursor: pointer;
+  background-color: burlywood;
+  transition: cubic-bezier(0.215, 0.61, 0.355, 1) ease-in-out;
+  transform: scale(105%);
+  -webkit-transform: scale(105%);
+  -moz-transform: scale(105%);
+  -ms-transform: scale(105%);
+  -o-transform: scale(105%);
+  -webkit-transition: cubic-bezier(0.215, 0.61, 0.355, 1) ease-in-out;
+  -moz-transition: cubic-bezier(0.215, 0.61, 0.355, 1) ease-in-out;
+  -ms-transition: cubic-bezier(0.215, 0.61, 0.355, 1) ease-in-out;
+  -o-transition: cubic-bezier(0.215, 0.61, 0.355, 1) ease-in-out;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: #4caf50; /* Warna hijau */
+  color: #fff; /* Warna teks putih */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #45a049; /* Warna hijau yang lebih gelap saat dihover */
+}
+
+button:disabled {
+  background-color: #b8b8b8; /* Warna abu-abu saat tombol dinonaktifkan */
+  cursor: not-allowed;
+}
